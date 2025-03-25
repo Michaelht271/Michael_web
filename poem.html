@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Poetry Collection - Michael's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="images/logo.webp">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <div id="header"></div>
+    <script src="js/header.js"></script>
+
+    <main class="content-wrapper">
+        <!-- Hero Section -->
+        <section class="hero-section hero-gradient">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-7xl font-display font-bold mb-8 text-dark animate-fade-in">
+                    Poetic Expressions
+                </h1>
+                <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-primary animate-fade-in">
+                    A collection of thoughts and emotions woven into verse
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Poem Section -->
+        <section id="featured" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-display font-bold text-center mb-16 text-dark">Featured Poem</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="bg-accent/10 rounded-xl shadow-lg p-12 hover-scale">
+                        <article class="text-center">
+                            <h3 class="text-3xl font-display font-semibold text-dark mb-6">The Digital Dawn</h3>
+                            <div class="flex items-center justify-center mb-8 text-gray-600">
+                                <span class="mr-4"><i class="far fa-calendar-alt mr-2"></i>January 15, 2024</span>
+                                <span class="mx-4">|</span>
+                                <span class="text-primary"><i class="fas fa-tag mr-2"></i>Technology</span>
+                            </div>
+                            <div class="poem-text text-gray-700 text-xl italic leading-relaxed mb-8">
+                                In circuits deep and silicon dreams,<br>
+                                Where binary whispers flow in streams,<br>
+                                A world of ones and zeros bright,<br>
+                                Illuminates the digital night.<br><br>
+                                Through networks vast and servers high,<br>
+                                Data packets race across the sky,<br>
+                                Each pixel perfect, each byte complete,<br>
+                                As virtual and reality meet.<br><br>
+                                In this realm of endless code,<br>
+                                Where innovation's seeds are sowed,<br>
+                                We build tomorrow's dreams today,<br>
+                                As technology lights the way.
+                            </div>
+                            <div class="flex items-center justify-center space-x-6">
+                                <button
+                                    class="flex items-center space-x-2 text-gray-500 hover:text-primary transition duration-300">
+                                    <i class="far fa-heart text-xl"></i>
+                                    <span>42</span>
+                                </button>
+                                <button
+                                    class="flex items-center space-x-2 text-gray-500 hover:text-secondary transition duration-300">
+                                    <i class="far fa-comment text-xl"></i>
+                                    <span>12</span>
+                                </button>
+                                <button
+                                    class="flex items-center space-x-2 text-gray-500 hover:text-accent transition duration-300">
+                                    <i class="far fa-bookmark text-xl"></i>
+                                    <span>Save</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Poetry Collection -->
+        <section id="collection" class="py-20  from-primary to-secondary">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-display font-bold text-center mb-16">Poetry Collection</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <!-- Poem 1 -->
+                    <div class="poem-card rounded-2xl shadow-lg p-8">
+                        <article>
+                            <h3 class="text-2xl font-display font-semibold text-dark mb-4">Moonlit Memories</h3>
+                            <div class="flex items-center mb-4 text-gray-600 text-sm">
+                                <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i>January 10, 2024</span>
+                                <span class="mx-3">|</span>
+                                <span class="text-primary"><i class="fas fa-tag mr-1"></i>Nature</span>
+                            </div>
+                            <div class="poem-text text-gray-700 mb-6">
+                                Silver beams on gentle streams,<br>
+                                Paint pictures of forgotten dreams,<br>
+                                Where shadows dance with starlit grace,<br>
+                                And time slows down its hurried pace...
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <button class="text-gray-500 hover:text-primary transition duration-300">
+                                        <i class="far fa-heart mr-1"></i> 38
+                                    </button>
+                                    <button class="text-gray-500 hover:text-secondary transition duration-300">
+                                        <i class="far fa-comment mr-1"></i> 8
+                                    </button>
+                                </div>
+                                <a href="#"
+                                    class="text-primary hover:text-secondary transition-colors duration-300 font-medium">
+                                    Read More →
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Poem 2 -->
+                    <div class="poem-card rounded-2xl shadow-lg p-8">
+                        <article>
+                            <h3 class="text-2xl font-display font-semibold text-dark mb-4">Code and Creativity</h3>
+                            <div class="flex items-center mb-4 text-gray-600 text-sm">
+                                <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i>January 5, 2024</span>
+                                <span class="mx-3">|</span>
+                                <span class="text-primary"><i class="fas fa-tag mr-1"></i>Technology</span>
+                            </div>
+                            <div class="poem-text text-gray-700 mb-6">
+                                Lines of logic, clean and neat,<br>
+                                Form patterns that are bittersweet,<br>
+                                In functions deep and classes wide,<br>
+                                Art and science side by side...
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <button class="text-gray-500 hover:text-primary transition duration-300">
+                                        <i class="far fa-heart mr-1"></i> 45
+                                    </button>
+                                    <button class="text-gray-500 hover:text-secondary transition duration-300">
+                                        <i class="far fa-comment mr-1"></i> 15
+                                    </button>
+                                </div>
+                                <a href="#"
+                                    class="text-primary hover:text-secondary transition-colors duration-300 font-medium">
+                                    Read More →
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Poem 3 -->
+                    <div class="poem-card rounded-2xl shadow-lg p-8">
+                        <article>
+                            <h3 class="text-2xl font-display font-semibold text-dark mb-4">Urban Symphony</h3>
+                            <div class="flex items-center mb-4 text-gray-600 text-sm">
+                                <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i>December 28, 2023</span>
+                                <span class="mx-3">|</span>
+                                <span class="text-primary"><i class="fas fa-tag mr-1"></i>City Life</span>
+                            </div>
+                            <div class="poem-text text-gray-700 mb-6">
+                                City lights in endless rows,<br>
+                                Tell stories that nobody knows,<br>
+                                Through concrete canyons deep and wide,<br>
+                                Where dreams and destiny collide...
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <button class="text-gray-500 hover:text-primary transition duration-300">
+                                        <i class="far fa-heart mr-1"></i> 32
+                                    </button>
+                                    <button class="text-gray-500 hover:text-secondary transition duration-300">
+                                        <i class="far fa-comment mr-1"></i> 7
+                                    </button>
+                                </div>
+                                <a href="#"
+                                    class="text-primary hover:text-secondary transition-colors duration-300 font-medium">
+                                    Read More →
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Poem 4 -->
+                    <div class="poem-card rounded-2xl shadow-lg p-8">
+                        <article>
+                            <h3 class="text-2xl font-display font-semibold text-dark mb-4">Digital Dreams</h3>
+                            <div class="flex items-center mb-4 text-gray-600 text-sm">
+                                <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i>December 20, 2023</span>
+                                <span class="mx-3">|</span>
+                                <span class="text-primary"><i class="fas fa-tag mr-1"></i>Innovation</span>
+                            </div>
+                            <div class="poem-text text-gray-700 mb-6">
+                                In virtual realms of endless space,<br>
+                                Where pixels paint a different place,<br>
+                                Through screens of light and shadow's dance,<br>
+                                We find a new world to entrance...
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <button class="text-gray-500 hover:text-primary transition duration-300">
+                                        <i class="far fa-heart mr-1"></i> 41
+                                    </button>
+                                    <button class="text-gray-500 hover:text-secondary transition duration-300">
+                                        <i class="far fa-comment mr-1"></i> 11
+                                    </button>
+                                </div>
+                                <a href="#"
+                                    class="text-primary hover:text-secondary transition-colors duration-300 font-medium">
+                                    Read More →
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+
+
+
+    <script>
+        // Mobile menu functionality
+        const menuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        menuButton?.addEventListener('click', () => {
+            mobileMenu?.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

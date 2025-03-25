@@ -1,0 +1,42 @@
+<!-- Header Navigation -->
+<header class="nav-gradient fixed w-full z-50">
+    <nav class="container mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class=" w-10 h-10 bg-white rounded-full flex items-center justify-center logo-container">
+
+                        <img src="images/logo.webp" alt="Logo">
+
+                    </div>
+
+                    <span class="text-3xl font-extrabold font-display bg-gradient-to-r 
+                                          from-[#f7dcb5] to-[#fce4cb] 
+                                          bg-clip-text text-transparent drop-shadow-lg">
+                        Michael
+                    </span>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <!-- Thêm class "nav-link" để JavaScript nhận diện -->
+                <a href="index.html" class="nav-link text-xl font-bold text-accent hover:text-white">Home</a>
+                <a href="it.html" class="nav-link text-xl font-bold text-accent hover:text-white">IT Skills</a>
+                <a href="poem.html" class="nav-link text-xl font-bold text-accent hover:text-white">Poems</a>
+                <a href="index.html#contact" class="nav-link text-xl font-bold text-accent hover:text-white">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button class="mobile-menu-button text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden mobile-menu md:hidden mt-4 pb-4">
+            <a href="index.html" class="nav-link block px-4 py-2 rounded-lg text-accent hover:text-white">Home</a>
+            <a href="it.html" class="nav-link block px-4 py-2 rounded-lg text-accent hover:text-white">IT Skills</a>
+            <a href="poem.html" class="nav-link block px-4 py-2 rounded-lg text-accent hover:text-white">Poems</a>
+            <a href="index.html#contact"
+                class="nav-link block px-4 py-2 rounded-lg !text-accent hover:text-white">Contact</a>
+        </div>
+    </nav>
+</header>

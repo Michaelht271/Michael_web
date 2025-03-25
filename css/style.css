@@ -1,0 +1,164 @@
+/* Đặt box-sizing cho toàn bộ phần tử */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Biến CSS (Custom Properties) */
+:root {
+    --primary-color: #8B7355;
+    /* Nâu be ấm  */
+    --secondary-color: #A69782;
+    /* Beige nhạt */
+    --accent-color: #D2B28C;
+    /* Màu nhấn nhẹ */
+    --text-color: #4A3C2A;
+    /* Màu chữ đậm */
+    --background-color: #F8F5F2;
+    /* Màu nền sáng nhẹ */
+    --hover-color: #EAD7B5;
+    /* Màu hover nhẹ */
+    --border-color: #C4A484;
+    /* Đường viền tinh tế */
+}
+
+/* Reset cơ bản cho layout */
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-container {
+    width: 40px;
+    /* Điều chỉnh kích thước theo ý muốn */
+    height: 40px;
+    border-radius: 50%;
+    /* Bo tròn ảnh */
+    overflow: hidden;
+    /* Cắt phần thừa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    /* Nền trắng */
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Cắt ảnh vừa với khung */
+}
+
+/* Khu vực nội dung chính chiếm toàn bộ chiều cao trừ header/footer */
+main {
+    flex: 1;
+}
+
+.content-wrapper {
+    padding-top: 4rem;
+}
+
+section {
+    min-height: calc(100vh - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Gradients */
+.nav-gradient {
+    background: linear-gradient(to right, #e69b40, #3f2a0c);
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #e0b172, #e6d8c1);
+}
+
+.section-gradient {
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Scale */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Nút bấm */
+button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+}
+
+/* Card */
+.card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Link */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section (tuỳ chỉnh nếu cần) */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 4rem;
+}
